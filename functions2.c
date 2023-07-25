@@ -11,6 +11,7 @@
  * @size: Size
  * Return: Number of chars printed.
  */
+
 int print_pointer(va_list ap, char buffer[],
 	int flags, int width, int precision, int size)
 {
@@ -126,7 +127,7 @@ int print_reverse(va_list ap, char buffer[],
 	for (j = 0; str[j]; j++)
 		;
 
-	for j = j - 1; j >= 0; j--)
+	for (j = j - 1; j > = 0; j--);
 	{
 		char z = str[j];
 
