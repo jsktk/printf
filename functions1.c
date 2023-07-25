@@ -1,6 +1,6 @@
 #include "main.h"
 
-/************************* PRINT UNSIGNED NUMBER *************************/
+/********************* PRINT UNSIGNED NUMBER ***********************/
 /**
  * print_unsigned - Prints unsigned interger numbers
  * @ap: Argument pointer
@@ -78,7 +78,7 @@ int print_octal(va_list ap, char buffer[],
 	return (write_unsgnd(0, b, buffer, flags, width, precision, size));
 }
 
-/************** PRINT UNSIGNED NUMBER IN HEXADECIMAL **************/
+/************ PRINT UNSIGNED NUMBER IN HEXADECIMAL ************/
 /**
  * print_hexadecimal - Prints unsigned number in hexadecimal notation
  * @ap: Argument pointer
