@@ -89,7 +89,7 @@ int print_non_printable(va_list ap, char buffer[],
 
 	buffer[m + offset] = '\0';
 
-	return (write(1, buffer, i + offset));
+	return (write(1, buffer, m + offset));
 }
 
 /************************* PRINT REVERSE *************************/
@@ -115,7 +115,7 @@ int print_reverse(va_list ap, char buffer[],
 	UNUSED(width);
 	UNUSED(size);
 
-	str = va_arg(types, char *);
+	str = va_arg(ap, char *);
 
 	if (str == NULL)
 	{
@@ -126,7 +126,7 @@ int print_reverse(va_list ap, char buffer[],
 	for (j = 0; str[j]; j++)
 		;
 
-	for ji = j - 1; j >= 0; j--)
+	for j = j - 1; j >= 0; j--)
 	{
 		char z = str[j];
 
