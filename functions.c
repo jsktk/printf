@@ -167,11 +167,11 @@ int print_binary(va_list ap, char buffer[],
 
 	k = va_arg(ap, unsigned int);
 	l = 2147483648; /* (2 ^ 31) */
-	a[0] = k / m;
+	a[0] = k / l;
 	for (j = 1; j < 32; j++)
 	{
 		l /= 2;
-		a[i] = (k / l) % 2;
+		a[j] = (k / l) % 2;
 	}
 	for (j = 0, sum = 0, count = 0; j < 32; j++)
 	{
