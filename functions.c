@@ -141,7 +141,7 @@ int print_int(va_list ap, char buffer[],
 	return (write_number(is_negative, j, buffer, flags, width, precision, size));
 }
 
-/************************* PRINT BINARY *************************/
+/******************** PRINT BINARY ***********************/
 /**
  * print_binary - Prints unsigned number
  * @ap: Argument pointer
