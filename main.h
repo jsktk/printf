@@ -80,9 +80,9 @@ int print_pointer(va_list types, char buffer[],
 
 /* Funciotns to handle other specifiers */
 int get_flags(const char *s, int *p);
-int get_width(const char *format, int *i, va_list list);
-int get_precision(const char *format, int *i, va_list list);
-int get_size(const char *format, int *i);
+int get_width(const char *s, int *i, va_list ap);
+int get_precision(const char *s, int *i, va_list ap);
+int get_size(const char *s, int *i);
 
 /*Function to print string in reverse*/
 int print_reverse(va_list types, char buffer[],
