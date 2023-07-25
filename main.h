@@ -71,7 +71,7 @@ int print_hexa(va_list ap, char map_to[],
 char buffer[], int flags, char flag_ch, int width, int precision, int size);
 
 /* Function to print non printable characters */
-int print_non_printable(va_list types, char buffer[],
+int print_non_printable(va_list ap, char buffer[],
 	int flags, int width, int precision, int size);
 
 /* Funcion to print memory address */
@@ -89,7 +89,7 @@ int print_reverse(va_list types, char buffer[],
 	int flags, int width, int precision, int size);
 
 /*Function to print a string in rot 13*/
-int print_rot13string(va_list types, char buffer[],
+int print_rot13string(va_list ap, char buffer[],
 	int flags, int width, int precision, int size);
 
 /* width handler */
