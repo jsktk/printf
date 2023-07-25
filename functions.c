@@ -136,7 +136,7 @@ int print_int(va_list ap, char buffer[],
 		num /= 10;
 	}
 
-	i++;
+	j++;
 
 	return (write_number(is_negative, j, buffer, flags, width, precision, size));
 }
