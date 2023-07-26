@@ -18,21 +18,21 @@ int get_precision(const char *s, int *i, va_list ap)
 
 	precision = 0;
 
-	for (curr_i += 1; s[curr_i] != '\0'; curr_i++)
+for (curr_i += 1; s[curr_i] != '\0'; curr_i++)
+{
+	if (is_digit(s[curr_i]))
 	{
-		if (is_digit(s[curr_i]))
-		{
-			precision *= 10;
-			precision += s[curr_i] - '0';
-		}
-		else if (s[curr_i] == '*')
-		{
-			curr_i++;
-			precision = va_arg(ap, int);
-			break;
-		}
-		else
-			break;
+		precision *= 10;
+		precision += s[curr_i] - '0';
+	}
+	else if (s[curr_i] == '*')
+	{
+	curr_i++;
+	precision = va_arg(ap, int);
+		break;
+	}
+	else
+		break;
 	}
 
 	*i = curr_i - 1;
